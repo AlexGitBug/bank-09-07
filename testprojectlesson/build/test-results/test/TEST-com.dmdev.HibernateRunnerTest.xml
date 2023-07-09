@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.dmdev.HibernateRunnerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-07-06T13:45:09" hostname="TESTPC" time="2.621">
+  <properties/>
+  <testcase name="checkOrphanremoval()" classname="com.dmdev.HibernateRunnerTest" time="2.621"/>
+  <system-out><![CDATA[Hibernate: 
+    select
+        company0_.id as id1_2_0_,
+        company0_.name as name2_2_0_ 
+    from
+        company company0_ 
+    where
+        company0_.id=?
+Hibernate: 
+    select
+        users0_.company_id as company_7_1_0_,
+        users0_.id as id1_1_0_,
+        users0_.id as id1_1_1_,
+        users0_.company_id as company_7_1_1_,
+        users0_.birth_date as birth_da2_1_1_,
+        users0_.firstname as firstnam3_1_1_,
+        users0_.lastname as lastname4_1_1_,
+        users0_.role as role5_1_1_,
+        users0_.username as username6_1_1_ 
+    from
+        public.users users0_ 
+    where
+        users0_.company_id=?
+]]></system-out>
+  <system-err><![CDATA[log4j:WARN No appenders could be found for logger (org.jboss.logging).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+]]></system-err>
+</testsuite>
